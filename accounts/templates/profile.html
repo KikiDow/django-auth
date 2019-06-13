@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block page_title %} Django Auth {% endblock %}
+
+{% block page_heading %} {{ user }}'s Profile Page {% endblock %}
+
+{% block content %}
+<p>Hi, My name is {{ user }} and welcome to my profile.</p>
+<p>You can contact me on {{ profile.email }}</p>
+{% endblock %}
